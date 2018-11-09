@@ -29,15 +29,15 @@ def create_database():
         mycursor = conn.cursor()
         try:
             mycursor.execute("CREATE DATABASE db_181041004")
-            print(bcolors.OKGREEN + "\n Success: Database 'db_181041003' created \n" + bcolors.ENDC)
+            print(bcolors.OKGREEN + "\n Success: Database 'db_181040003' created \n" + bcolors.ENDC)
         except:
-            print(bcolors.WARNING + "\n Warning: Database 'db_181041003' already exists \n" + bcolors.ENDC)
+            print(bcolors.WARNING + "\n Warning: Database 'db_181040003' already exists \n" + bcolors.ENDC)
     else:
         print(bcolors.FAIL + "\n Error: Could not connect to mysql server \n" + bcolors.ENDC)
 
 
 def create_table():
-    conn_db = mysql.connector.connect(host="localhost", db="db_181041003", user="root",password="root")
+    conn_db = mysql.connector.connect(host="localhost", db="db_181040003", user="root",password="root")
     if conn_db.is_connected():
         mycursor = conn_db.cursor()
         try:
@@ -52,7 +52,7 @@ def create_table():
 
 
 def insert_values():
-    conn_db = mysql.connector.connect(host="localhost", db="db_181041003", user="root",password="root")
+    conn_db = mysql.connector.connect(host="localhost", db="db_181040003", user="root",password="root")
     if conn_db.is_connected():
         mycursor = conn_db.cursor()
 
@@ -83,7 +83,7 @@ def insert_values():
 
 
 def alter_table():
-    conn_db = mysql.connector.connect(host="localhost", db="db_181041003", user="root",password="root")
+    conn_db = mysql.connector.connect(host="localhost", db="db_181040003", user="root",password="root")
     if conn_db.is_connected():
         mycursor = conn_db.cursor()
 
@@ -103,7 +103,7 @@ def alter_table():
 
 
 def truncate_table():
-    conn_db = mysql.connector.connect(host="localhost", db="db_181041003", user="root",password="root")
+    conn_db = mysql.connector.connect(host="localhost", db="db_181040003", user="root",password="root")
     if conn_db.is_connected():
         mycursor = conn_db.cursor()
 
@@ -121,7 +121,7 @@ def truncate_table():
 
 
 def display_values():
-    conn_db = mysql.connector.connect(host="localhost", db="db_181041003", user="root",password="root")
+    conn_db = mysql.connector.connect(host="localhost", db="db_181040003", user="root",password="root")
     if conn_db.is_connected():
         mycursor = conn_db.cursor()
 
